@@ -1,0 +1,33 @@
+{
+  "name": "nt-module-sms",
+  "version": "1.0.0",
+  "description": "Nest SMS module.",
+  "scripts": {
+    "start": "ts-node -r tsconfig-paths/register src/main.ts",
+    "start:watch": "nodemon",
+    "debug": "node --inspect-brk -r ts-node/register src/main.ts",
+    "debug:watch": "nodemon --config nodemon-debug.json",
+    "check": "tslint -p tsconfig.json -c tslint.json",
+    "fix": "tslint -p tsconfig.json -c tslint.json --fix"
+  },
+  "author": "Max",
+  "license": "Apache-2.0",
+  "private": false,
+  "dependencies": {
+    "@grpc/proto-loader": "^0.3.0",
+    "@nestjs/common": "^5.3.6",
+    "@nestjs/core": "^5.3.6",
+    "@nestjs/microservices": "^5.3.6",
+    "grpc": "^1.14.2",
+    "rxjs": "^6.3.2",
+    "typeorm": "^0.2.7",
+    "typescript": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^10.5.2",
+    "nodemon": "^1.18.3",
+    "ts-node": "^7.0.0",
+    "tsconfig-paths": "^3.4.2",
+    "tslint": "^5.11.0"
+  }
+}
